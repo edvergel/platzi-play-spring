@@ -12,5 +12,5 @@ RUN ./mvnw clean package -DskipTests
 FROM eclipse-temurin:21-jre
 WORKDIR /app
 COPY --from=build /app/target/*.jar platzi_play.jar
-EXPOSE 8080
+EXPOSE 9092
 ENTRYPOINT ["java", "-Dspring.profiles.active=prod", "-jar", "platzi_play.jar"]
