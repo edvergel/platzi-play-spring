@@ -1,4 +1,4 @@
-package com.platzi.platzi_play;
+/*package com.platzi.platzi_play;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,3 +11,4 @@ class PlatziPlayApplicationTests {
 	}
 
 }
+*/

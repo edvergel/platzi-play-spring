@@ -37,6 +37,7 @@ public class MovieEntityRepository implements MovieRepository {
 
     @Override
     public MovieDto save(MovieDto movieDto) {
+        // Si el titulo de la pelicula existe, lanza excepción
         if (this.crudMovieEntity.findFirstByTitulo(movieDto.title()) != null) {
             throw new MovieAlreadyExistsException(movieDto.title());
         }

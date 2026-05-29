@@ -27,7 +27,7 @@ public class RestExceptionHandler {
         return ((BodyBuilder) ResponseEntity.notFound()).body(error);
     }
 
-    // Para manjar excepciones en parametros que se estan incumpliendo
+    // Para manjar excepciones en parametros que se estan incumpliendo (@Valid)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<List<Error>> handleException(MethodArgumentNotValidException ex){
         List<Error> errors = new ArrayList<>();
